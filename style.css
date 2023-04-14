@@ -1,0 +1,9 @@
+.anotation-card{
+    width: 30rem;
+    max-height: 95vh;
+}
+
+.anotations-listing{
+    overflow-y: scroll;
+    height: 25rem;
+}
