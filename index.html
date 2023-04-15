@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteManager</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="vw-100 vh-100 bg-dark position-relative">
-        <div class="card position-absolute top-50 start-50 translate-middle anotation-card">
-            <div class="card-body">
-                <h5 class="card-title">Anotações</h5>
-                
-                <div class="border-bottom mb-3"></div>
+    <div class="w-100 vh-100 position-relative">
+        <div class="bg-success w-100 position-fixed top-0 z-1" >
+            <header class="container d-flex justify-content-between">
+                <h1 class="text-white">NoteManager</h1>
+            </header>
+        </div>
+        <div class="w-100 h-100 bg-dark position-relative">
+            <div class="card position-absolute top-50 start-50 translate-middle anotation-card">
+                <div class="card-body">
+                    <h5 class="card-title">Anotações</h5>
 
-                <form>
-                    <div class="mb-3">
-                        <label for="nova-anotacao" class="form-label">Nova Anotação:</label>
-                        <input type="text" id="nova-anotacao" placeholder="Lembrar de comprar..." class="form-control">
-                    </div>
-                    <div>
-                        <button class="btn btn-success" id="add-notation">Adicionar</button>
-                        <button class="btn btn-outline-secondary">Limpar</button>
-                    </div>
-                    
-                </form>
+                    <div class="border-bottom mb-3"></div>
 
-                <div class="border-bottom mb-3 mt-3"></div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nova-anotacao" class="form-label">Nova Anotação:</label>
+                            <input type="text" id="nova-anotacao" placeholder="Lembrar de comprar..."
+                                class="form-control">
+                        </div>
+                        <div>
+                            <button class="btn btn-success" id="add-notation">Adicionar</button>
+                            <button class="btn btn-outline-secondary">Limpar</button>
+                        </div>
 
-                <h6 class="card-title">Anotações criadas:</h6>
+                    </form>
 
-                <div class="anotations-listing">
-                    <div class="list-group" id="anotation-list">
-                        <div class="list-group-item d-flex flex-column">
-                            <span>Anotação de exemplo</span>
-                            <div>
-                                <button class="btn btn-sm btn-outline-danger">Deletar</button>
+                    <div class="border-bottom mb-3 mt-3"></div>
+
+                    <h6 class="card-title">Anotações criadas:</h6>
+
+                    <div class="anotations-listing">
+                        <div class="list-group" id="anotation-list">
+                            <div class="list-group-item d-flex flex-column">
+                                <span>Anotação de exemplo</span>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-danger">Deletar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -46,4 +57,5 @@
         </div>
     </div>
 </body>
+
 </html>
