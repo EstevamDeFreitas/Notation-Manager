@@ -24,6 +24,15 @@
                     <h5 class="card-title">Anotações</h5>
 
                     <div class="border-bottom mb-3"></div>
+                    <div class="mb-3">
+                        <label for="nova-anotacao" class="form-label">Nova Anotação:</label>
+                        <input type="text" id="nova-anotacao" placeholder="Lembrar de comprar..." class="form-control">
+                    </div>
+                    <div>
+                        <button class="btn btn-success" id="add-notation" onclick="adicionar()">Adicionar</button>
+                        <button class="btn btn-outline-secondary">Limpar</button>
+                    </div>
+                    
 
                     <form>
                         <div class="mb-3">
@@ -52,10 +61,12 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
