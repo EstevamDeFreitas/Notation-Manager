@@ -11,8 +11,9 @@ function adicionar() {
     elementoDivListagem.classList.add('list-group-item')
     elementoDivListagem.classList.add('d-flex')
     elementoDivListagem.classList.add('flex-column')
-
     listagem.appendChild(elementoDivListagem);
+}
 
+function limpar() {
     novaanotacao.value = ''
 }
